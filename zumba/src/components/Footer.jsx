@@ -2,6 +2,10 @@ import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa6";
 import logo from "../assets/logo/logo.png";
 
 export default function Footer() {
+  const instagram = import.meta.env.VITE_INSTAGRAM_URL || "https://instagram.com/she_sweats_fitness_studio";
+  const facebook = import.meta.env.VITE_FACEBOOK_URL || "#";
+  const whatsapp = import.meta.env.VITE_WHATSAPP_NUMBER || "919629992750";
+
   return (
     <footer className="bg-black border-t border-pink-500/20 py-12 px-6">
 
@@ -24,7 +28,7 @@ export default function Footer() {
         <div className="flex justify-center gap-6 mt-8">
 
           <a
-            href="https://instagram.com/she_sweats_fitness_studio"
+            href={instagram}
             target="_blank"
             rel="noreferrer"
             className="text-pink-500 text-3xl hover:scale-125 transition"
@@ -33,14 +37,16 @@ export default function Footer() {
           </a>
 
           <a
-            href="#"
+            href={facebook}
+            target="_blank"
+            rel="noreferrer"
             className="text-pink-500 text-3xl hover:scale-125 transition"
           >
             <FaFacebook />
           </a>
 
           <a
-            href="https://wa.me/919629992750"
+            href={`https://wa.me/${whatsapp}`}
             target="_blank"
             rel="noreferrer"
             className="text-green-500 text-3xl hover:scale-125 transition"

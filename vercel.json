@@ -1,0 +1,11 @@
+{
+  "framework": "vite",
+  "buildCommand": "cd zumba && npm run build",
+  "outputDirectory": "zumba/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
