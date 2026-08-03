@@ -12,7 +12,7 @@ import Review from "./components/Review";
 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import WhatsappButton from "./components/WhatsappButton";
+import WhatsappButton from "./components/WhatsAppButton";
 import LoadingScreen from "./components/LoadingScreen";
 import TrialModal from "./components/TrialModal";
 
