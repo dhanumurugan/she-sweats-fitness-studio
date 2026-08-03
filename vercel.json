@@ -1,8 +1,5 @@
 {
   "framework": "vite",
-  "installCommand": "cd zumba && npm install",
-  "buildCommand": "cd zumba && npm run build",
-  "outputDirectory": "zumba/dist",
   "rewrites": [
     {
       "source": "/(.*)",
