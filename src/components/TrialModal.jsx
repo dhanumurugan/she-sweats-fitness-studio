@@ -21,7 +21,7 @@ function TrialModal({ isOpen, onClose }) {
   function handleSubmit(event) {
     event.preventDefault();
 
-    const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "919629992750";
+    const whatsappNumber = "919629992750";
 
     const message = `Hi Coach Sindhu Raja! 👋
 

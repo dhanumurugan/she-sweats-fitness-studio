@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsappButton() {
-  // Include country code without +, spaces, or hyphens
+  // Include country code without +, spaces, or hyphens.
   const phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "919629992750";
 
   const message = `Hi Coach Sindhu Raja! 👋

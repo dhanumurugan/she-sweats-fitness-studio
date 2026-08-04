@@ -9,12 +9,6 @@ import {
 } from "react-icons/fa6";
 
 export default function Contact() {
-  const whatsappNum = import.meta.env.VITE_WHATSAPP_NUMBER || "919629992750";
-  const phoneNum = import.meta.env.VITE_CONTACT_PHONE || "+919629992750";
-  const emailAddr = import.meta.env.VITE_CONTACT_EMAIL || "sindhuraja04044@gmail.com";
-  const instagramUrl = import.meta.env.VITE_INSTAGRAM_URL || "https://instagram.com/she_sweats_fitness_studio";
-  const facebookUrl = import.meta.env.VITE_FACEBOOK_URL || "#";
-  const mapEmbedUrl = import.meta.env.VITE_GOOGLE_MAPS_EMBED || "https://www.google.com/maps/embed?pb=!4v1784026138995!6m8!1m7!1sKm8Oli8PStfbpPPOg3jCXQ!2m2!1d8.796982165492855!2d78.15233489385453!3f294.27845862947447!4f1.1835486173061156!5f0.7820865974627469";
   return (
     <motion.section
       initial={{ opacity: 0, y: 80 }}
@@ -65,10 +59,10 @@ export default function Contact() {
                 <div>
                   <h3 className="text-white font-bold">Phone</h3>
                   <a
-                    href={`tel:${phoneNum}`}
+                    href="tel:+919629992750"
                     className="text-gray-300 hover:text-pink-400 transition"
                   >
-                    {phoneNum.replace("+91", "").trim() || phoneNum}
+                    9629992750
                   </a>
                 </div>
               </div>
@@ -78,12 +72,12 @@ export default function Contact() {
                 <div>
                   <h3 className="text-white font-bold">WhatsApp</h3>
                   <a
-                    href={`https://wa.me/${whatsappNum}`}
+                    href="https://wa.me/919629992750"
                     target="_blank"
                     rel="noreferrer"
                     className="text-green-400 hover:underline"
                   >
-                    Chat on WhatsApp ({phoneNum})
+                    Chat on WhatsApp (+91 9629992750)
                   </a>
                 </div>
               </div>
@@ -93,10 +87,10 @@ export default function Contact() {
                 <div>
                   <h3 className="text-white font-bold">Email</h3>
                   <a
-                    href={`mailto:${emailAddr}`}
+                    href="mailto:sindhuraja04044@gmail.com"
                     className="text-gray-300 hover:text-pink-400 transition"
                   >
-                    {emailAddr}
+                    sindhuraja04044@gmail.com
                   </a>
                 </div>
               </div>
@@ -104,7 +98,7 @@ export default function Contact() {
               <div className="flex gap-5 pt-4">
 
                 <a
-                  href={instagramUrl}
+                  href="https://instagram.com/she_sweats_fitness_studio"
                   target="_blank"
                   rel="noreferrer"
                   className="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center hover:scale-110 transition"
@@ -113,9 +107,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href={facebookUrl}
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#"
                   className="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center hover:scale-110 transition"
                 >
                   <FaFacebook />
@@ -130,7 +122,7 @@ export default function Contact() {
           {/* Map Placeholder */}
           <div className="rounded-3xl overflow-hidden shadow-2xl border border-pink-500/20">
             <iframe
-              src={mapEmbedUrl}
+              src="https://www.google.com/maps/embed?pb=!4v1784026138995!6m8!1m7!1sKm8Oli8PStfbpPPOg3jCXQ!2m2!1d8.796982165492855!2d78.15233489385453!3f294.27845862947447!4f1.1835486173061156!5f0.7820865974627469"
               width="100%"
               height="500"
               style={{ border: 0 }}
